@@ -1,0 +1,22 @@
+{
+  "candidate": [
+    {
+      "complete": false,
+      "name": "Lingam",
+      "position": "Angular Developer",
+      "experience": "3",
+      "date": "2018-08-16",
+      "stage": "First Level",
+      "id": 1
+    },
+    {
+      "complete": false,
+      "name": "Aadesh Ram",
+      "position": "Doctor",
+      "experience": "10",
+      "date": "2018-08-01",
+      "stage": "Final Level",
+      "id": 2
+    }
+  ]
+}

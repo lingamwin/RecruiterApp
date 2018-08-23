@@ -1,0 +1,39 @@
+<div class="container">
+  <div>
+    <div style="height:50px">
+      <div style="float: left;">
+        <h3>
+          Qualified Candidates
+        </h3>
+      </div>
+      <div style="float: right; margin-right: 100px; margin-top: 6px;">
+        <img style="cursor: pointer;widows: 35px;height: 35px;" (click)="goNew()" src="../../../assets/images/add.png" alt="Add Canditate"
+        />
+      </div>
+    </div>
+  </div>
+  <mat-tab-group>
+    <mat-tab label="Candidates">
+      <div style="width: 200px;">
+        <ag-grid-angular (rowClicked)='onRowClicked($event)' #agGrid style="width: 496%; height: 300px;" class="ag-theme-balham"
+          [gridOptions]="gridOptions">
+        </ag-grid-angular>
+      </div>
+    </mat-tab>
+    <mat-tab label="Notes">
+           
+            <div class="form-group">
+              <label for="note">Note:</label>
+              <textarea ng-model="note"></textarea>
+
+              <div *ngIf="submitted && noteForm.controls.note.errors" class="error">
+                <div *ngIf="noteForm.controls.password.errors.required">Note is required</div>
+              </div>
+            </div>
+            <button class="btn btn-default">Add</button>
+          
+    </mat-tab>
+  </mat-tab-group>
+
+
+</div>
